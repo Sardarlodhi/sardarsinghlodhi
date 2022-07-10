@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,700&family=Nunito:wght@200;300;400;700&display=swap');
+
+/* Declare Color For Text & Background-Color */
+:root {
+  --primary: #0d6efd;
+  --warning: #c59c21;
+  --success: #198854;
+  --danger: #dc3545;
+  --purple: #6f42c1;
+  --white: #ffffff;
+  --gray: #eee;
+  --gray-1: #f8f9fa;
+  --gray-2: #e9ecef;
+  --gray-3: #ffffff;
+  --gray-4: #ced4da;
+  --gray-8: #343a40;
+  --dark: #212529;
+  --indigo: #6610f2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  outline: none;
+  color: var(--white);
+  text-align: left;
+  background-color: var(--white);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+*::selection {
+  color: var(--white);
+  background: var(--primary);
+}
+
+
+/* Sellect TextBg Color Start */
+
+/* Top scroll progress-bar style*/
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--primary);
+  z-index: 10000;
+}
+
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+/* Navigation  style strat */
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:active {
+  color: var(--primary);
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* Icon 1 */
+
+.animated-icon{
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon span {
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon span {
+background: #2d7ef7;
+}
+
+.animated-icon span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon span:nth-child(2) {
+top: 10px;
+}
+
+.animated-icon span:nth-child(3) {
+top: 20px;
+}
+
+.animated-icon.open span:nth-child(1) {
+top: 11px;
+-webkit-transform: rotate(135deg);
+-moz-transform: rotate(135deg);
+-o-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+
+.animated-icon.open span:nth-child(2) {
+opacity: 0;
+left: -60px;
+}
+
+.animated-icon.open span:nth-child(3) {
+top: 11px;
+-webkit-transform: rotate(-135deg);
+-moz-transform: rotate(-135deg);
+-o-transform: rotate(-135deg);
+transform: rotate(-135deg);
+}
+
+/* Navigation  style end */
+/*===================================================*/
+
+/* Header  style strat */
+.header{
+  min-height: 100vh;
+}
+.header .display-5{
+  -webkit-text-stroke: 4px var(--white);
+}
+
+.header .typed-cursor{
+  font-size: 45px;
+  color: var(--white);
+}
+
+.header .typewriter {
+    font-size: 10px;
+    color: var(--white);
+    margin: 0;
+    transform: translateY(-50%);
+}
+
+.header .typewriter span {
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 8px;
+    border-right: solid var(--white) 1px; 
+    animation: cursor 1s ease-in-out infinite;
+}
+@keyframes cursor {
+    from { border-color: var(--white); }
+    to { border-color: transparent; }
+}
+
+/* Header  style end */
+/*===================================================*/
+
+/* About  style strat */
+/* About  style end */
+/*===================================================*/
+
+/* Education  style strat */
+/* Education  style end */
+/*===================================================*/
+
+/* Skill  style strat */
+.skill .html, .css, .js, .csharp, .github{
+  width: 20px;
+}
+.skill .bootstrap{
+  width: 28px;
+}
+.skill .mvc, .ado, .sqlserver{
+  width: 28px;
+}
+
+.skill .progress{
+  height: 10px;
+}
+
+.skill .progress .progress-bar{
+  height: 10px;
+}
+/* Skill  style end */
+/*===================================================*/
+
+/* Project  style strat */
+.project {
+  min-height: 100vh;
+}
+.project h1{
+  font-size: 150px;
+}
+.project p{
+  font-size: 50px;
+}
+/* Project  style end */
+/*===================================================*/
+
+/* Contact  style strat */
+/* Contact  style end */
+/*===================================================*/
+
+/* Footer  style strat */
+footer a:focus {
+  box-shadow: none !important;
+}
+footer i:hover{
+  color: var(--primary);
+}
+/* Footer  style end */
+/*===================================================*/
